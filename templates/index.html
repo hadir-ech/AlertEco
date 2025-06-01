@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoAlert</title>
+</head>
+<body>
+  <h1>Signaler un incident environnemental</h1>
+  <form id="reportForm">
+    <input type="text" id="title" placeholder="Titre" required><br>
+    <textarea id="description" placeholder="Description" required></textarea><br>
+    <input type="text" id="location" placeholder="Lieu" required><br>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <h2>Signalements :</h2>
+  <ul id="reportList"></ul>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
